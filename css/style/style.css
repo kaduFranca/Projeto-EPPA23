@@ -1,14 +1,14 @@
 body{
-    background-color: #cc9966;
+    background-color: #ba945e;
     font-family: "Verdana, Geneva, Tahoma, sans-serif";
 }
 
 .cor-marrom{
-background-color: #663300;
+background-color: #5e380b;
 }
 
 .navbar li a:hover{
-    background-color: #cc9966;
+    background-color: #ba945e;
     
 
 }
