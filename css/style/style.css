@@ -8,6 +8,19 @@
 body{
     background-color: #ba945e;
     font-family: "Roboto";
+    min-width: 400px;
+    max-width: 1900px;
+    padding: 0;
+    margin: 0 auto !important;
+
+
+}
+.navbar{
+    min-width: 400px;
+    max-width: 1900px;
+    padding: 0;
+    margin: 0 auto !important;
+
 }
 
 .cor-marrom{
@@ -30,8 +43,9 @@ background-color: #5e380b;
 .back-two{
     background-image: url("../../img/background/back-2.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size:  cover;
+    background-position: center;
+  
 }
 
 .slogan{
@@ -63,24 +77,14 @@ background-color: #5e380b;
     position: relative;
     font-family: "Roboto";
     background-color: azure;
-    width: 30vw;
-    height: auto;
     box-shadow: 0 0.3vw 0.7vw rgb(21, 19, 19);
 }
 
-.relogio{
-    background-image: url("../../img/graphics/clock.svg");
-    background-repeat: no-repeat;
-    background-size:  contain;
-    position: static;
+.relogio {
     right: 0;
-    padding: 18%;
+    padding: 0;
     margin: 10%;
     top: 0;
 }
 
-.ponteiro{
-    position: absolute;
-   
-}
 
