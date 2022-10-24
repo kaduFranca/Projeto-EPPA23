@@ -54,11 +54,11 @@ body {
 }
 
 .slogan {
-    right: 0%;
+    right: 2%;
     padding: 0%;
     margin: 0%;
     border: 0;
-    bottom: 30%;
+    bottom: 35%;
     filter: drop-shadow(0.4vw 0.4vw 0.7vw #222);
 
 }
@@ -70,9 +70,7 @@ body {
     top: 0%;
     border: 0;
     filter: drop-shadow(0.4vw 0.4vw 0.7vw #222);
-
-
-
+    z-index: 1
 }
 
 
@@ -99,9 +97,10 @@ body {
 }
 
 .relogio {
+    position: relative;
     right: 0;
     padding: 0;
-    margin: 10%;
+    margin: 20%;
     top: 0;
 
 
