@@ -1,21 +1,22 @@
 @import url("https://use.typekit.net/uma2tiz.css");
 
 @font-face {
-    font-family:'Magic-Retro';
-    src:url("../../font/magic-retro.ttf")
+    font-family: 'Magic-Retro';
+    src: url("../../font/magic-retro.ttf")
 }
 
-body{
+body {
     background-color: #ba945e;
     font-family: "Roboto";
     min-width: 400px;
     max-width: 1900px;
     padding: 0;
     margin: 0 auto !important;
-
+    user-select: none;
 
 }
-.navbar{
+
+.navbar {
     min-width: 400px;
     max-width: 1900px;
     padding: 0;
@@ -23,61 +24,78 @@ body{
 
 }
 
-.cor-marrom{
-background-color: #5e380b;
+.cor-marrom {
+    background-color: #5e380b;
 }
 
-.navbar li a:hover{
+.navbar li a:hover {
     background-color: #ba945e;
-   
-    
+
+
 }
 
-.back-one{
+.back-one {
     background-image: url("../../img/background/back-1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    
+    pointer-events: none;
+
+
 }
 
-.back-two{
+.back-two {
     background-image: url("../../img/background/back-2.png");
     background-repeat: no-repeat;
-    background-size:  cover;
+    background-size: cover;
     background-position: center;
-  
+    min-height: 1300px;
+
+
 }
 
-.slogan{
-    left: 54%;
+.slogan {
+    right: 0%;
     padding: 0%;
     margin: 0%;
     border: 0;
-    bottom: 33%;
+    bottom: 30%;
+    filter: drop-shadow(0.4vw 0.4vw 0.7vw #222);
+
 }
-.ronaldo{  
+
+.ronaldo {
     right: 23%;
     padding: -20%;
     margin: 0%;
-    top: -2%;
+    top: 0%;
     border: 0;
+    filter: drop-shadow(0.4vw 0.4vw 0.7vw #222);
+
+
 
 }
 
 
-.separador{
+.separador {
     right: 0;
     padding: 0;
     margin: 0%;
     top: 0%;
-    
+    filter: drop-shadow(0.4vw 0.4vw 0.7vw #222);
+
 }
 
-.box-1{
+.box-1 {
     position: relative;
     font-family: "Roboto";
     background-color: azure;
     box-shadow: 0 0.3vw 0.7vw rgb(21, 19, 19);
+}
+
+.box-marrom {
+    background-color: #5e380b;
+    box-shadow: 0 0.4vw 0.7vw rgb(21, 19, 19);
+    font-family: "Magic-Retro";
 }
 
 .relogio {
@@ -85,6 +103,6 @@ background-color: #5e380b;
     padding: 0;
     margin: 10%;
     top: 0;
+
+
 }
-
-
