@@ -86,18 +86,16 @@ body {
 .box-1 {
     position: relative;
     font-family: "Roboto";
-    background-color: azure;
+    background-color: white;
     box-shadow: -0.2vw 0.2vw 0.7vw rgb(21, 19, 19);
 }
 
 .botao{
     box-shadow: -0.05vw 0.05vw 0.2vw rgb(21, 19, 19);
-    box-shadow:0 5px 0 #5e380b;
+   
 }
 .botao:active{
-    position:relative;
-    top:5px;
-    box-shadow:none;
+    background-color: #ba945e;
   }
 .box-marrom {
     font-family: "Magic-Retro";
