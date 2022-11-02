@@ -35,16 +35,17 @@ body {
 }
 
 .back-one {
-    background-image: url("../../img/background/back-1.png");
+    background-image: url("../../img/background/back-1-min.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     pointer-events: none;
 
 
 }
 
 .back-two {
-    background-image: url("../../img/background/back-2.png");
+    background-image: url("../../img/background/back-2-min.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -54,7 +55,7 @@ body {
 }
 
 .slogan {
-    right: 0%;
+    right: 2%;
     padding: 0%;
     margin: 0%;
     border: 0;
