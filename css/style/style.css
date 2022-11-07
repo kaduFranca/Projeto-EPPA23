@@ -5,6 +5,7 @@
     src: url("../../font/magic-retro.ttf")
 }
 
+
 body {
     background-color: #ba945e;
     font-family: "Roboto";
@@ -38,9 +39,9 @@ body {
     background-image: url("../../img/background/back-1-min.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     pointer-events: none;
-    
+
 
 }
 
@@ -48,9 +49,28 @@ body {
     background-image: url("../../img/background/back-2-min.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     min-height: 1300px;
 
+
+}
+
+.back-three {
+    background-image: url("../../img/background/back-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 120vh;
+    position: relative;
+
+}
+
+.back-four {
+    background-image: url("../../img/background/back-4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 120vh;
 
 }
 
@@ -78,7 +98,33 @@ body {
 .separador {
     right: 0;
     padding: 0;
-    margin: 0%;
+    margin-top: 50%;
+    top: 0%;
+    filter: drop-shadow(0.4vw 0.4vw 0.7vw #222);
+    z-index: 10;
+}
+
+.separador2 {
+    right: 0;
+    padding: 0;
+    margin-top: 50%;
+    margin-bottom: -1.5%;
+    top: 0%;
+    filter: drop-shadow(0.4vw 0.4vw 0.7vw #222);
+    z-index: 10;
+}
+
+.separador3 {
+    margin-top: -1.5%;
+    right: 0;
+    padding: 0;
+    margin-bottom: -10%
+}
+
+.separador-2 {
+    right: 1%;
+    padding: 0;
+    margin-top: 50%;
     top: 0%;
     filter: drop-shadow(0.4vw 0.4vw 0.7vw #222);
 
@@ -91,13 +137,15 @@ body {
     box-shadow: -0.2vw 0.2vw 0.7vw rgb(21, 19, 19);
 }
 
-.botao{
+.botao {
     box-shadow: -0.05vw 0.05vw 0.2vw rgb(21, 19, 19);
-   
+
 }
-.botao:active{
+
+.botao:active {
     background-color: #ba945e;
-  }
+}
+
 .box-marrom {
     font-family: "Magic-Retro";
 }
@@ -110,4 +158,70 @@ body {
     top: 0;
 
 
+}
+
+.contato {
+    background-color: #532A64;
+    font-family: "Roboto";
+    color: #fff;
+}
+
+
+.imagem-ingresso {
+    display: flex;
+    background-image: url("../../img/slogan/ingressos.png");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 350px;
+    height: 350px;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+
+}
+
+.centralizar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.logo-ingressos {
+    display: flex;
+    background-image: url("../../img/slogan/chaves-da-criatividade.png");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    padding: 0;
+    top: 0%;
+    left: 31%;
+    margin: 0;
+    z-index: 4;
+    animation: Girar 15s linear infinite;
+}
+
+@keyframes Girar {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.cogumelos {
+    display: flex;
+    background-image: url("../../img/graphics/programacao.png");
+    position: relative;
+    width: auto;
+    min-height: 115vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 10%;
+    right: 3%;
+
+    z-index: 6;
 }

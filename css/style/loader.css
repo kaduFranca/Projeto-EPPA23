@@ -1,25 +1,27 @@
 #preloader {
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background-color:#5e380b; 
-    z-index:99999; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 99999;
 }
+
 #preloader .inner {
-    position: absolute;
-    top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
-    left: 50%;
-    transform: translate(-50%, -50%);  
+  position: absolute;
+  top: 50%;
+  /* centralizar a parte interna do preload (onde fica a animação)*/
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.desenho > div {
+
+.desenho>div {
   display: inline-block;
-  background-image: url("../../img/icons/logo-min.svg");
+  background-image: url("../../img/graphics/rabbit.png");
   width: 200px;
   height: 200px;
   background-repeat: no-repeat;
   background-size: contain;
- 
-}
 
+}

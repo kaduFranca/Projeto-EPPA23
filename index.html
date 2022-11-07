@@ -32,25 +32,25 @@
           data-bs-target="#navbarEppa" aria-controls="navbarEppa" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand m-1 mx-auto mx-lg-4 mx-md-1" href="#">
+        <a class="navbar-brand m-1 mx-auto mx-lg-4 mx-md-1" href="#inicial">
           <img src="img/icons/logo-min.svg" alt="EPPA" width="80%">
         </a>
         <div class="collapse  navbar-collapse justify-content-end " id="navbarEppa">
           <ul class="navbar-nav  mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active text-white p-3 rounded-pill py-1" aria-current="page" href="#">Início</a>
+              <a class="nav-link active text-white p-3 rounded-pill py-1" aria-current="page" href="#inicial">Início</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white p-3 rounded-pill py-1" href="#">Sobre o Eppa</a>
+              <a class="nav-link text-white p-3 rounded-pill py-1" href="#sobre">Sobre o Eppa</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white p-3 rounded-pill py-1" href="#">Programação</a>
+              <a class="nav-link text-white p-3 rounded-pill py-1" href="#programacao">Programação</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white p-3 rounded-pill py-1" href="#">Ingressos</a>
+              <a class="nav-link text-white p-3 rounded-pill py-1" href="#ingressos">Ingressos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white p-3 rounded-pill py-1" href="#">Quem faz acontecer</a>
+              <a class="nav-link text-white p-3 rounded-pill py-1" href="#quemFaz">Quem faz acontecer</a>
             </li>
 
           </ul>
@@ -61,39 +61,40 @@
   </header>
   <main>
 
+    <!-- Primeiro fundo (Coelho) -->
+    <div class="container-fluid position-relative  back-one mt-5 " id="inicial">
 
-    <div class="container-fluid position-relative  back-one mt-5 ">
-
-        <div class="row g-0 align-items-center">
-          <!-- Coelho Ronaldo -->
-          <div class="col-4 text-center mx-auto  order-2 w-50 my-lg-0 my-md-1 my-3 ronaldo position-absolute ">
-            <img src="img/graphics/ronaldo-min.png" alt="ronaldo" width="90%" class="img-fluid rounded d-block">
-          </div>
-
-          <!-- Relogio -->
-          <div class="col-3 clock relogio order-1">
-            <div class="hour"></div>
-            <div class="min"></div>
-            <div class="sec"></div>
-            <div class="centro rounded-circle"></div>
-          </div>
-
-          <!-- Slogan (O coelho, a porta e a criatividade) -->
-          <div class="col-4 mx-auto text-center order-3 position-absolute me-lg-5 w-50 slogan">
-            <img src="img/slogan/slogan-min.png" alt="slogan" width="60%" class="img-fluid rounded d-block ms-auto">
-
-          </div>
+      <div class="row g-0 align-items-center">
+        <!-- Coelho Ronaldo -->
+        <div class="col-4 text-center mx-auto  order-2 w-50 my-lg-0 my-md-1 my-3 ronaldo position-absolute ">
+          <img src="img/graphics/ronaldo-min.png" alt="ronaldo" width="90%" class="img-fluid rounded d-block">
         </div>
-        <!-- Separador de background -->
-        <div
-          class="row g-0 mx-auto my-0 position-relative order-4 text-center pt-md-5 pt-lg-5 pt-4 align-items-center separador">
-          <img src="img/graphics/separador-min.svg" alt="separador" class="img-fluid rounded d-block pt-5 mt-auto"
-            style="margin-bottom: -1.5%;">
+
+        <!-- Relogio -->
+        <div class="col-3 clock relogio order-1">
+          <div class="hour"></div>
+          <div class="min"></div>
+          <div class="sec"></div>
+          <div class="centro rounded-circle"></div>
         </div>
-      
+
+        <!-- Slogan (O coelho, a porta e a criatividade) -->
+        <div class="col-4 mx-auto text-center order-3 position-absolute me-lg-5 w-50 slogan">
+          <img src="img/slogan/slogan-min.png" alt="slogan" width="60%" class="img-fluid rounded d-block ms-auto">
+
+        </div>
+      </div>
+      <!-- Separador de background -->
+      <div
+        class="row g-0 mx-auto my-0 position-relative order-4 text-center pt-md-5 pt-lg-5 pt-4 align-items-center separador">
+        <img src="img/graphics/separador-min.svg" alt="separador" class="img-fluid rounded d-block pt-5 mt-auto"
+          style="margin-bottom: -1.5%;">
+      </div>
+
     </div>
 
-    <div class="container-fluid back-two ps-0 ps-lg-5 ">
+    <!-- Segundo fundo (Quadros Jornada e Guardiões) -->
+    <div class="container-fluid back-two ps-0 ps-lg-5 " id="sobre">
       <div class="row ">
 
         <!-- Primeiro quadrado (A jornada até aqui) -->
@@ -114,7 +115,8 @@
             <div
               class="badge mx-3  mt-5 mt-md-1 pt-5 pt-md-5 mt-lg-0 pt-lg-4 my-0 pt-0  py-4 fs-5  fw-normal text-wrap lh-sm text-break "
               style="color: #5E380B;">
-              <p class="text-start my-1 my-md-1 my-lg-1">Presente como o maior evento de comunicação da sua região, o eppa navega por
+              <p class="text-start my-1 my-md-1 my-lg-1">Presente como o maior evento de comunicação da sua região, o
+                eppa navega por
                 esse universo há mais
                 de
                 17 edições.
@@ -146,7 +148,8 @@
             <div
               class="badge mx-3 mt-5 mt-md-2 pt-1 pt-md-4 mt-lg-0 pt-lg-4 my-0  py-4 fs-5  fw-normal text-wrap lh-sm text-break"
               style="color: #5E380B;">
-              <p class="text-start my-3 my-md-0 ">Conheça os responsáveis por guiar sua jornada durante o evento, com tudo que é
+              <p class="text-start my-3 my-md-0 ">Conheça os responsáveis por guiar sua jornada durante o evento, com
+                tudo que é
                 necessário para despertar seu fazer criativo através de workshops e palestras imersivas.
               </p>
               <div class="text-start">
@@ -159,17 +162,169 @@
         </div>
 
       </div>
+      <!-- Separador de background -->
+      <div class="row mx-auto me-5  position-relative separador2  text-center">
+        <img src="img/graphics/separador-min.svg" alt="separador" class="img-fluid rounded d-block">
+      </div>
+
+    </div>
+    <!-- Terceiro fundo (Ingressos) -->
+    <div class="container-fluid back-three " id="ingressos">
+      <div class="row mx-auto text-center centralizar">
+        <div class="col">
+          <div class="imagem-ingresso"></div>
+        </div>
+        <div class="col ">
+          <div class="logo-ingressos "></div>
+        </div>
+        <div class="col " style="z-index: 6;">
+          <input type="submit" class="btn fs-6 rounded-pill position-absolute  centralizar my-5"
+            style="background-color: #532A64; color: #FFFFFF; font-family: Magic-Retro;" value="Compre agora">
+        </div>
+
+      </div>
+
+    </div>
+    <!-- Separador de background -->
+    <div class="row mx-auto  position-relative separador3  text-center ">
+      <img src="img/graphics/separador-min.svg" alt="separador" class="img-fluid rounded d-block  ">
+    </div>
 
     </div>
 
+
+
+    <!-- Quarto fundo (Programação) -->
+    <div class="container-fluid back-four " >
+      <div class="row " >
+        <div class="col">
+          <div class="cogumelos" id="programacao">
+            <div class="position-relative col-4" style="margin-top: 50%; margin-left: 13%; color: #fff;" >
+              <p class=" h1 text-sm-start text-wrap" style="font-family: Magic-Retro;">Patronos</p>
+              <p class="badge lh-1 fs-6 text-start text-wrap" style="color: #5E380B; font-family: Roboto;">Conheça as instituições que acreditam na criatividade como
+                ferramenta transformadora e fizeram o evento acontecer.
+              </p>
+              <input type="submit" class="btn fs-5 rounded-pill position-absolute px-5 "
+                style="margin-left: -100%; margin-top: 30%; background-color: #5E380B; color: #FFFFFF; font-family: Magic-Retro;" value="Conheça">
+            </div>
+          </div>
+        </div>
+        <div class="col-5 mx-lg-auto  my-lg-0  py-5">
+          <div class="box-marrom cor-marrom d-flex  py-4  rounded-4 position-relative"
+            style="top: 15%; left: 10%; width: 50%; height: 15%; margin-top: 15%;">
+            <div class="d-flex mx-auto">
+              <div class="badge text-wrap d-block">
+                <p class="display-6">Programação</p>
+              </div>
+            </div>
+          </div>
+          <div class=" mx-auto m-5 mb-lg-5 box-1 position-static rounded-5 w-75 pt-md-0  pt-lg-5">
+            <div
+              class="badge mx-3 mt-5 mt-md-2 pt-1 pt-md-4 mt-lg-0 pt-lg-4 my-0  py-4 fs-5  fw-normal text-wrap lh-sm text-break"
+              style="color: #5E380B;">
+              <p class="text-start my-3 my-md-0 ">Selecione as atrações que mais combinam com você e clique em "Enviar
+                programação por e-mail" para receber sua programação personalizada.
+              </p>
+              <div class="text-start">
+                <button
+                  class="box-marrom botao cor-marrom rounded-pill text-center text-white w-auto fs-5 border-0 mx-2  mt-2 px-5 py-2">Explore</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
   </main>
+
+  <!-- Footer -->
   <footer>
-    <!-- place footer here -->
+    <div class="contato">
+      <div class="container ">
+
+        <div class="row justify-content-center align-items-center g-2 " style=" color: #532A64;">
+
+          <!-- Envie uma mensagem -->
+          <div class="col-lg-4 col-md-6 d-flex mx-auto ">
+            <form>
+              <div class="row">
+                <p class=" h3 text-start text-wrap" style="font-family: Magic-Retro; color: #F7ECC4;">Envie uma mensagem
+                  ao coelho</p>
+                <p class="badge lh-1 fs-6 text-start text-wrap">Expresse suas dúvidas, vontades ou ideias ao nosso
+                  guia. Em breve, você receberá uma resposta da nossa equipe.
+                </p>
+
+              </div>
+              <div class="row ">
+                <div class="col-lg-6 col-md-10  mb-3 mb-lg-0">
+                  <input type="text" class="form-control  rounded-pill" placeholder="Nome*" aria-label="Nome*"
+                    id="nome">
+                </div>
+                <div class="col-lg-6 col-md-10  mb-3 mb-lg-0">
+                  <input type="email" class="form-control rounded-pill" placeholder="E-mail*" aria-label="E-mail*"
+                    id="email">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-8 col-md-10 form-floating mb-3">
+                  <div class="mb-0">
+                    <label for="Escreva sua mensagem" class="form-label" id="comentario"></label>
+                    <textarea class="form-control rounded-4 overflow-hidden" placeholder="Escreva sua mensagem"
+                      name="comentario" id="comentario" rows="3"></textarea>
+                  </div>
+
+                </div>
+                <div class="col-lg-3 col-md-12 text-center">
+                  <input type="submit" class="btn mb-3 fs-6 rounded-pill px-4 my-4 "
+                    style="background-color: #F7ECC4; color: #532A64; font-family: Magic-Retro;" value="Enviar">
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- inscreva-se -->
+          <div class="col-lg-4 col-md-6 mb-auto d-flex mx-auto ">
+            <form>
+              <div class="row ">
+                <p class=" h3 text-start text-wrap" style="font-family: Magic-Retro; color: #F7ECC4;">Inscreva-se na
+                  newsletter</p>
+                <p class="badge lh-1 fs-6 text-start text-wrap">Fique ligado nos novos conteúdos especiais sobre o eppa
+                  e todo o nosso universo!
+                </p>
+
+              </div>
+              <div class="row ">
+                <div class="col-lg-6 col-md-10  mb-3 mb-lg-0">
+                  <input type="text" class="form-control rounded-pill" placeholder="Nome*" aria-label="Nome*" id="nome">
+                </div>
+                <div class="col-lg-6 col-md-10  mb-3 mb-lg-0">
+                  <input type="email" class="form-control rounded-pill" placeholder="E-mail*" aria-label="E-mail*"
+                    id="email">
+                </div>
+              </div>
+              <div class="row text-black text-lg-end text-center ">
+                <div class="col-lg-12 col-md-10 col-12">
+                  <input type="submit" class="btn mb-3 fs-6 rounded-pill px-4 my-4 "
+                    style="background-color: #F7ECC4; color: #532A64; font-family: Magic-Retro;" value="Enviar">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-center g-2">
+          <div class="col-lg-4 col-10 my-5 mb-5 mx-1 text-center">Realização:</div>
+          <div class="col-lg-4 col-10 my-5 mb-5 mx-1 text-center">Apoio:</div>
+        </div>
+      </div>
+    </div>
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="js/jquery/jquery-3.6.1.min.js"></script>
   <script src="js/bootstrap/popper.min.js"></script>
   <script src="js/bootstrap/bootstrap.min.js"></script>
+  <script src="js/funcionalidades/app.js"></script>
   <script src="js/funcionalidades/relogio.js"></script>
   <script src="js/funcionalidades/PreLoader.js"></script>
 
