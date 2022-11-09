@@ -248,7 +248,7 @@
 
           <!-- Envie uma mensagem -->
           <div class="col-lg-4 col-md-6 d-flex mx-auto ">
-            <form>
+            <form method="post" action="php/index.php">
               <div class="row">
                 <p class=" h3 text-start text-wrap" style="font-family: Magic-Retro; color: #F7ECC4;">Envie uma mensagem
                   ao coelho</p>
@@ -260,11 +260,11 @@
               <div class="row ">
                 <div class="col-lg-6 col-md-10  mb-3 mb-lg-0">
                   <input type="text" class="form-control  rounded-pill" placeholder="Nome*" aria-label="Nome*"
-                    id="nome">
+                    id="nome" name="nome" required="">
                 </div>
                 <div class="col-lg-6 col-md-10  mb-3 mb-lg-0">
                   <input type="email" class="form-control rounded-pill" placeholder="E-mail*" aria-label="E-mail*"
-                    id="email">
+                    id="email" name="mail" required="">
                 </div>
               </div>
               <div class="row">
@@ -272,7 +272,7 @@
                   <div class="mb-0">
                     <label for="Escreva sua mensagem" class="form-label" id="comentario"></label>
                     <textarea class="form-control rounded-4 overflow-hidden" placeholder="Escreva sua mensagem"
-                      name="comentario" id="comentario" rows="3"></textarea>
+                      name="comentario" id="comentario" rows="3" required=""></textarea>
                   </div>
 
                 </div>
