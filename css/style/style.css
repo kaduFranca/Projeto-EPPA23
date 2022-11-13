@@ -31,8 +31,6 @@ body {
 
 .navbar li a:hover {
     background-color: #ba945e;
-
-
 }
 
 .back-one {
@@ -41,7 +39,6 @@ body {
     background-size: cover;
     background-position: center center;
     pointer-events: none;
-
 
 }
 
@@ -56,12 +53,17 @@ body {
 }
 
 .back-three {
+    display: flex;
     background-image: url("../../img/background/back-3.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     height: 120vh;
     position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
 
 }
 
@@ -70,7 +72,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 120vh;
+    min-height: 120vh;
+    max-height: 1300px;
+    
 
 }
 
@@ -107,28 +111,22 @@ body {
 .separador2 {
     right: 0;
     padding: 0;
-    margin-top: 50%;
-    margin-bottom: -1.5%;
+    margin-top: -1.5%;
+    margin-bottom: -1.6%;
     top: 0%;
     filter: drop-shadow(0.4vw 0.4vw 0.7vw #222);
     z-index: 10;
 }
 
 .separador3 {
-    margin-top: -1.5%;
     right: 0;
     padding: 0;
-    margin-bottom: -10%
-}
-
-.separador-2 {
-    right: 1%;
-    padding: 0;
-    margin-top: 50%;
-    top: 0%;
+    margin-top: -1.5%;
+    margin-bottom: -10%;
     filter: drop-shadow(0.4vw 0.4vw 0.7vw #222);
 
 }
+
 
 .box-1 {
     position: relative;
@@ -168,9 +166,9 @@ body {
 
 
 .imagem-ingresso {
-    display: flex;
+    display:flex;
     background-image: url("../../img/slogan/ingressos.png");
-    position: relative;
+    position: absolute;
     background-repeat: no-repeat;
     background-size: contain;
     width: 350px;
@@ -178,16 +176,11 @@ body {
     padding: 0;
     margin: 0;
     z-index: 1;
+    margin-top: -175px;
+    margin-left: -175px;
 
 }
 
-.centralizar {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
 
 .logo-ingressos {
     display: flex;
@@ -198,11 +191,17 @@ body {
     width: 150px;
     height: 150px;
     padding: 0;
-    top: 0%;
-    left: 31%;
     margin: 0;
     z-index: 4;
+    margin-top: -170px;
+    margin-left: -57px;
     animation: Girar 15s linear infinite;
+}
+.btn-compre{
+    position: absolute;
+    z-index:5;
+    margin-top: 15px;
+    margin-left: -47px;
 }
 
 @keyframes Girar {
@@ -212,16 +211,46 @@ body {
     }
 }
 
-.cogumelos {
+.programacao{
     display: flex;
-    background-image: url("../../img/graphics/programacao.png");
-    position: relative;
-    width: auto;
-    min-height: 115vh;
-    background-repeat: no-repeat;
-    background-size: contain;
-    top: 10%;
-    right: 3%;
+    min-width: 200px;
+    max-width: 500px;
+    
+   
+}
 
-    z-index: 6;
+.cogumelo{
+    position: relative;
+    background-image: url('../../img/graphics/programacao.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    overflow: hidden;
+    float:left;
+    width:  350px;
+    height: 650px;
+    min-width: 100%; 
+    min-height: 100%; 
+    left: -35%;
+    top: 3%;
+    padding: 0%;
+    margin: 0;
+    z-index: 4;
+
+}
+
+.box-patronos{
+    position: relative;
+    font-family: "Roboto";
+    color: #ffff;
+    background-color: transparent;
+    width: 30%;
+    height: 28%;
+    padding: 0;
+    margin: 0;
+    top: 50%;
+    margin-left: 45%;
+    min-width: 180px;
+    max-width: 300px;
 }
