@@ -9,7 +9,7 @@
 body {
     background-color: #ba945e;
     font-family: "Roboto";
-    min-width: 375px;
+    min-width: 320px;
     max-width: 1900px;
     padding: 0;
     margin: 0 auto !important;
@@ -18,7 +18,7 @@ body {
 }
 
 .navbar {
-    min-width: 375px;
+    min-width: 320px;
     max-width: 1900px;
     padding: 0;
     margin: 0 auto !important;
@@ -31,8 +31,6 @@ body {
 
 .navbar li a:hover {
     background-color: #ba945e;
-
-
 }
 
 .back-one {
@@ -41,7 +39,6 @@ body {
     background-size: cover;
     background-position: center center;
     pointer-events: none;
-
 
 }
 
@@ -56,12 +53,17 @@ body {
 }
 
 .back-three {
+    display: flex;
     background-image: url("../../img/background/back-3.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 120vh;
+    min-height: 1000px;
     position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
 
 }
 
@@ -70,7 +72,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 120vh;
+    max-height: 1400px;
+
 
 }
 
@@ -107,28 +110,22 @@ body {
 .separador2 {
     right: 0;
     padding: 0;
-    margin-top: 50%;
-    margin-bottom: -1.5%;
+    margin-top: -1.5%;
+    margin-bottom: -1.6%;
     top: 0%;
     filter: drop-shadow(0.4vw 0.4vw 0.7vw #222);
     z-index: 10;
 }
 
 .separador3 {
-    margin-top: -1.5%;
     right: 0;
     padding: 0;
-    margin-bottom: -10%
-}
-
-.separador-2 {
-    right: 1%;
-    padding: 0;
-    margin-top: 50%;
-    top: 0%;
+    margin-top: -1.5%;
+    margin-bottom: -10%;
     filter: drop-shadow(0.4vw 0.4vw 0.7vw #222);
 
 }
+
 
 .box-1 {
     position: relative;
@@ -170,24 +167,18 @@ body {
 .imagem-ingresso {
     display: flex;
     background-image: url("../../img/slogan/ingressos.png");
-    position: relative;
+    position: absolute;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     padding: 0;
     margin: 0;
     z-index: 1;
-
+    margin-top: -150px;
+    margin-left: -150px;
 }
 
-.centralizar {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
 
 .logo-ingressos {
     display: flex;
@@ -195,14 +186,21 @@ body {
     position: absolute;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 150px;
-    height: 150px;
+    width: 135px;
+    height: 135px;
     padding: 0;
-    top: 0%;
-    left: 31%;
     margin: 0;
     z-index: 4;
+    margin-top: -155px;
+    margin-left: -53px;
     animation: Girar 15s linear infinite;
+}
+
+.btn-compre {
+    position: absolute;
+    z-index: 5;
+    margin-top: 15px;
+    margin-left: -47px;
 }
 
 @keyframes Girar {
@@ -212,16 +210,47 @@ body {
     }
 }
 
-.cogumelos {
+.programacao {
     display: flex;
-    background-image: url("../../img/graphics/programacao.png");
-    position: relative;
-    width: auto;
-    min-height: 115vh;
-    background-repeat: no-repeat;
-    background-size: contain;
-    top: 10%;
-    right: 3%;
+    min-width: 200px;
+    max-width: 500px;
 
-    z-index: 6;
+
+}
+
+.cogumelo {
+    position: static;
+    background-image: url('../../img/graphics/programacao_inteiro.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    float: left;
+    display: flex;
+    width: 320px;
+    height: 800px;
+    min-width: 60%;
+    min-height: 100%;
+    transform: translate(-3.5%, 5%);
+    padding: 0%;
+    margin: 0%;
+    border: 0;
+    z-index: 4;
+
+    overflow: hidden;
+
+}
+
+.box-patronos {
+    position: absolute;
+    font-family: "Roboto";
+    color: #5e380b;
+    background-color: transparent;
+    width: 40%;
+    height: 38%;
+    padding: 0;
+    margin: 0;
+    top: 45%;
+    right: 42%;
+    min-width: 165px;
+
 }
