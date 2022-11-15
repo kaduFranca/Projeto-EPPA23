@@ -227,7 +227,7 @@ body {
     float: left;
     display: flex;
     width: 320px;
-    height: 700px;
+    height: 800px;
     min-width: 60%;
     min-height: 100%;
     transform: translate(-3.5%, 5%);
@@ -245,11 +245,12 @@ body {
     font-family: "Roboto";
     color: #5e380b;
     background-color: transparent;
-    width: 30%;
-    height: 28%;
+    width: 40%;
+    height: 38%;
     padding: 0;
     margin: 0;
     top: 45%;
-    right: 40%;
+    right: 42%;
     min-width: 165px;
+
 }
