@@ -58,7 +58,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    min-height: 1000px;
+    min-height: 800px;
     position: relative;
     text-align: center;
     align-items: center;
@@ -73,6 +73,7 @@ body {
     background-size: cover;
     background-position: center center;
     max-height: 1400px;
+    min-height: 800px;
 
 
 }
@@ -226,16 +227,14 @@ body {
     background-position: right;
     float: left;
     display: flex;
-    width: 320px;
-    height: 800px;
-    min-width: 60%;
-    min-height: 100%;
-    transform: translate(-3.5%, 5%);
+    width: 319px;
+    height: 680px;
+    min-width: 55%;
+    min-height: 120%;
+    transform: translate(-3%, 10%);
     padding: 0%;
     margin: 0%;
-    border: 0;
     z-index: 4;
-
     overflow: hidden;
 
 }
@@ -249,8 +248,8 @@ body {
     height: 38%;
     padding: 0;
     margin: 0;
-    top: 45%;
-    right: 42%;
+    top: 47%;
+    right: 41%;
     min-width: 165px;
 
 }
