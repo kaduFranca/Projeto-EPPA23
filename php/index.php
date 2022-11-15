@@ -14,7 +14,7 @@
             $msg = $_POST["comentario"];
             //Fim pegando email, nome e mensagem do usuario.
             
-            //Inicio importacao da biblioteca
+            //Inicio importacao da biblioteca PHPmailer
             require_once "src/PHPMailer.php";
             require_once "src/SMTP.php";
             require_once "src/Exception.php";
@@ -22,7 +22,7 @@
             use PHPMailer\PHPMailer\PHPMailer;
             use PHPMailer\PHPMailer\SMTP;
             use PHPMailer\PHPMailer\Exception;
-            //Fim importacao da biblioteca
+            //Fim importacao da biblioteca PHPmailer
             
             $email = new PHPMailer();//Criando objeto email
 
@@ -37,10 +37,10 @@
                 $email -> Username = 'eppacoelho@gmail.com';
                 $email -> Password = 'kpfdxwzlcsdfdioh';
                 $email -> Port = 587;
-                //Inicio atributos responsaveis por logar a conta de email
+                //Fim atributos responsaveis por logar a conta de email
 
                 //Inicio atributos responsaveis por definir as informacoes de DE: PARA: e CC:
-                $email -> setFrom($mail);//Deveria receber como parametro o email do formulario e mostrar como DE:, mas não funcionou
+                $email -> setFrom($mail);//recebe como parametro o email do formulario e mostrar como DE: no email.
                 $email -> addAddress('giovanisousa@outlook.com.br');//Aqui será inserido o email do EPPA que ainda será criado
                 $email -> addReplyTo($mail, $nome);
                 $email -> addCC($mail);
