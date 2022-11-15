@@ -9,7 +9,7 @@
 body {
     background-color: #ba945e;
     font-family: "Roboto";
-    min-width: 375px;
+    min-width: 320px;
     max-width: 1900px;
     padding: 0;
     margin: 0 auto !important;
@@ -18,7 +18,7 @@ body {
 }
 
 .navbar {
-    min-width: 375px;
+    min-width: 320px;
     max-width: 1900px;
     padding: 0;
     margin: 0 auto !important;
@@ -58,7 +58,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 120vh;
+    min-height: 1000px;
     position: relative;
     text-align: center;
     align-items: center;
@@ -72,9 +72,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    min-height: 120vh;
     max-height: 1300px;
-    
+
 
 }
 
@@ -166,19 +165,18 @@ body {
 
 
 .imagem-ingresso {
-    display:flex;
+    display: flex;
     background-image: url("../../img/slogan/ingressos.png");
     position: absolute;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     padding: 0;
     margin: 0;
     z-index: 1;
-    margin-top: -175px;
-    margin-left: -175px;
-
+    margin-top: -150px;
+    margin-left: -150px;
 }
 
 
@@ -188,18 +186,19 @@ body {
     position: absolute;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 150px;
-    height: 150px;
+    width: 135px;
+    height: 135px;
     padding: 0;
     margin: 0;
     z-index: 4;
-    margin-top: -170px;
-    margin-left: -57px;
+    margin-top: -155px;
+    margin-left: -53px;
     animation: Girar 15s linear infinite;
 }
-.btn-compre{
+
+.btn-compre {
     position: absolute;
-    z-index:5;
+    z-index: 5;
     margin-top: 15px;
     margin-left: -47px;
 }
@@ -211,46 +210,46 @@ body {
     }
 }
 
-.programacao{
+.programacao {
     display: flex;
     min-width: 200px;
     max-width: 500px;
-    
-   
+
+
 }
 
-.cogumelo{
-    position: relative;
-    background-image: url('../../img/graphics/programacao.png');
+.cogumelo {
+    position: static;
+    background-image: url('../../img/graphics/programacao_inteiro.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    display: block;
-    overflow: hidden;
-    float:left;
-    width:  350px;
-    height: 650px;
-    min-width: 100%; 
-    min-height: 100%; 
-    left: -35%;
-    top: 3%;
+    background-position: right;
+    float: left;
+    display: flex;
+    width: 320px;
+    height: 700px;
+    min-width: 60%;
+    min-height: 100%;
+    transform: translate(-3.5%, 5%);
     padding: 0%;
-    margin: 0;
+    margin: 0%;
+    border: 0;
     z-index: 4;
+
+    overflow: hidden;
 
 }
 
-.box-patronos{
-    position: relative;
+.box-patronos {
+    position: absolute;
     font-family: "Roboto";
-    color: #ffff;
+    color: #5e380b;
     background-color: transparent;
     width: 30%;
     height: 28%;
     padding: 0;
     margin: 0;
-    top: 50%;
-    margin-left: 45%;
-    min-width: 180px;
-    max-width: 300px;
+    top: 45%;
+    right: 40%;
+    min-width: 165px;
 }
