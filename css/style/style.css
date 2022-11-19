@@ -219,37 +219,38 @@ body {
 
 }
 
+.geral-patronos{
+    position: relative;
+    display: ruby-base;
+    background-position: right;
+    z-index: 4;
+    max-width: 500px;
+    min-width: 310px;
+    height: 700px;
+}
+
 .cogumelo {
-    position: static;
+    position: relative;
     background-image: url('../../img/graphics/programacao_inteiro.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
-    float: left;
-    display: flex;
-    width: 319px;
-    height: 680px;
-    min-width: 55%;
-    min-height: 120%;
+    min-height: 110%;
     transform: translate(-3%, 10%);
     padding: 0%;
     margin: 0%;
-    z-index: 4;
-    overflow: hidden;
-
 }
 
 .box-patronos {
+    display: inline-block;
     position: absolute;
     font-family: "Roboto";
     color: #5e380b;
     background-color: transparent;
-    width: 40%;
-    height: 38%;
+    width: 165px;
+    min-width: 40%;
     padding: 0;
     margin: 0;
     top: 47%;
-    right: 41%;
-    min-width: 165px;
-
+    right: 40%;
 }
