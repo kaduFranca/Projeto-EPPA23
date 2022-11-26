@@ -33,6 +33,7 @@ body {
     background-color: #ba945e;
 }
 
+
 .back-one {
     background-image: url("../../img/background/back-1-min.png");
     background-repeat: no-repeat;
@@ -232,7 +233,9 @@ body {
 .cogumelo {
     position: relative;
     background-image: url('../../img/graphics/programacao_inteiro.png');
+    background-color: transparent;
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: right;
     min-height: 110%;
