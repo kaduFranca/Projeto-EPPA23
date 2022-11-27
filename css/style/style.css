@@ -74,7 +74,7 @@ body {
     background-size: cover;
     background-position: center center;
     max-height: 1400px;
-    min-height: 800px;
+    min-height: 780px;
 
 
 }
@@ -105,7 +105,6 @@ body {
     padding: 0;
     margin-top: 50%;
     top: 0%;
-    filter: drop-shadow(0.4vw 0.4vw 0.7vw #222);
     z-index: 10;
 }
 
@@ -115,7 +114,6 @@ body {
     margin-top: -1.5%;
     margin-bottom: -1.6%;
     top: 0%;
-    filter: drop-shadow(0.4vw 0.4vw 0.7vw #222);
     z-index: 10;
 }
 
@@ -124,7 +122,6 @@ body {
     padding: 0;
     margin-top: -1.5%;
     margin-bottom: -10%;
-    filter: drop-shadow(0.4vw 0.4vw 0.7vw #222);
 
 }
 
@@ -222,12 +219,14 @@ body {
 
 .geral-patronos {
     position: relative;
-    display: ruby-base;
-    background-position: right;
+    display: block;
     z-index: 4;
     max-width: 500px;
-    min-width: 310px;
+    min-width: 300px;
+
     height: 700px;
+    min-height: 500px;
+
 }
 
 .cogumelo {
@@ -237,9 +236,9 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: right;
-    min-height: 110%;
-    transform: translate(-3%, 10%);
+    background-position: -220px 11px;
+    min-height: 105%;
+    transform: translate(-0%, 10%);
     padding: 0%;
     margin: 0%;
 }
@@ -250,10 +249,10 @@ body {
     font-family: "Roboto";
     color: #5e380b;
     background-color: transparent;
-    width: 165px;
+    width: 220px;
     min-width: 40%;
+    transform: translateX(39%);
+    top: 53%;
     padding: 0;
     margin: 0;
-    top: 47%;
-    right: 40%;
 }
