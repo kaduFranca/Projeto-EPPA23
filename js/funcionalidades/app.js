@@ -1,11 +1,10 @@
 //rolar a página até chegar no conteúdo selecionado no menu
-$('nav a').click(function(e){
+$('nav a').click(function (e) {
 	e.preventDefault();
 	var id = $(this).attr('href'),
-			menuHeight = $('nav').innerHeight(),
-			targetOffset = $(id).offset().top;
+		targetOffset = $(id).offset().top;
 	$('html, body').animate({
-		scrollTop: targetOffset - menuHeight
+		scrollTop: targetOffset - 45
 	}, 150);
 });
 
