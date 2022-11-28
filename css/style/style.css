@@ -162,44 +162,77 @@ body {
     color: #fff;
 }
 
+.geral-ingresso {
+    display: flex;
+    background-color: transparent;
+    position: relative;
+    flex-wrap: wrap;
+    display: inline-block;
+    justify-content: center;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    transform: translateY(-20%);
+}
 
 .imagem-ingresso {
-    display: flex;
+    display: block;
     background-image: url("../../img/slogan/ingressos.png");
-    position: absolute;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align-last: center;
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 300px;
-    height: 300px;
+    background-position: center;
+    max-width: 95vw;
+    min-width: 318px;
+    max-height: 60vw;
+    min-height: 200px;
+    height: 250px;
+    width: 420px;
+    background-size: cover;
     padding: 0;
     margin: 0;
     z-index: 1;
-    margin-top: -150px;
-    margin-left: -150px;
+
 }
 
 
 .logo-ingressos {
-    display: flex;
+    display: inline-block;
     background-image: url("../../img/slogan/chaves-da-criatividade.png");
-    position: absolute;
+    position: relative;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: contain;
-    width: 135px;
-    height: 135px;
+    max-width: 45%;
+    min-width: max-content;
+    min-height: max-content;
+    height: 80%;
+    width: 80%;
+    left: 5%;
+    top: -8%;
+    bottom: 15%;
     padding: 0;
     margin: 0;
     z-index: 4;
-    margin-top: -155px;
-    margin-left: -53px;
     animation: Girar 15s linear infinite;
 }
 
 .btn-compre {
-    position: absolute;
-    z-index: 5;
-    margin-top: 15px;
-    margin-left: -47px;
+    position: relative;
+    display: block;
+    background-size: cover;
+    align-items: flex-start;
+    justify-content: center;
+    text-align-last: center;
+    min-height: max-content;
+    max-width: 91%;
+    transform: translateX(9%);
+    top: 8%;
+    padding: 0;
+    margin: 0;
+
 }
 
 @keyframes Girar {
