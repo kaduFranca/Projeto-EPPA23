@@ -44,11 +44,15 @@ body {
 }
 
 .back-two {
+    display: flex;
+    position: relative;
     background-image: url("../../img/background/back-2-min.png");
     background-repeat: no-repeat;
     background-size: cover;
+    align-items: center;
+    justify-content: center;
     background-position: center center;
-    min-height: 1300px;
+    min-height: 1000px;
 
 
 }
@@ -128,9 +132,57 @@ body {
 
 .box-1 {
     position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 20%;
+
+}
+
+.box_Guardioes {
+    position: relative;
+    display: block;
+    max-width: 403px;
+    height: auto;
+    max-height: 350px;
+    min-height: 250px;
     font-family: "Roboto";
     background-color: white;
     box-shadow: -0.2vw 0.2vw 0.7vw rgb(21, 19, 19);
+}
+
+.box-M-guardioes {
+    display: inline-block;
+    position: relative;
+    min-width: 90%;
+    max-width: 90%;
+    right: 5%;
+    transform: translateY(-30%);
+    width: max-content;
+    height: auto;
+}
+
+.box_jornada {
+    position: relative;
+    display: inline-block;
+    max-width: 403px;
+    height: auto;
+    max-height: 1%;
+    min-height: 350px;
+    font-family: "Roboto";
+    background-color: white;
+    box-shadow: -0.2vw 0.2vw 0.7vw rgb(21, 19, 19);
+}
+
+.box-M-jornada {
+    display: inline-block;
+    position: relative;
+    min-width: 90%;
+    max-width: 90%;
+    right: 5%;
+    transform: translateY(-30%);
+    width: max-content;
+    height: auto;
 }
 
 .botao {
@@ -142,7 +194,7 @@ body {
     background-color: #ba945e;
 }
 
-.box-marrom {
+.font-magic {
     font-family: "Magic-Retro";
 }
 
@@ -189,7 +241,7 @@ body {
     max-height: 60vw;
     min-height: 200px;
     height: 250px;
-    width: 420px;
+    width: 410px;
     background-size: cover;
     padding: 0;
     margin: 0;
@@ -248,6 +300,12 @@ body {
     max-width: 500px;
 
 
+}
+
+.box-2 {
+    font-family: "Roboto";
+    background-color: white;
+    box-shadow: -0.2vw 0.2vw 0.7vw rgb(21, 19, 19);
 }
 
 .geral-patronos {
