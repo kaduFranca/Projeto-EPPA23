@@ -73,12 +73,15 @@ body {
 }
 
 .back-four {
+    display: flex;
     background-image: url("../../img/background/back-4.png");
     background-repeat: no-repeat;
     background-size: cover;
+    align-items: center;
+    justify-content: center;
     background-position: center center;
-    max-height: 1400px;
-    min-height: 780px;
+    max-height: 1500px;
+    min-height: 790px;
 
 
 }
@@ -132,11 +135,12 @@ body {
 
 .box-1 {
     position: relative;
-    display: flex;
+    display: inline-flex;
     align-items: flex-start;
     justify-content: center;
     margin-bottom: 20%;
 
+    
 }
 
 .box_Guardioes {
@@ -303,9 +307,41 @@ body {
 }
 
 .box-2 {
+    position: relative;
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 20%;
+    padding-bottom: 5%;
+    padding-left: 9%;
+    padding-right: 9%;
+
+}
+
+.box_progamacao {
+    position: relative;
+    display: block;
+    max-width: 370px;
+    height: auto;
+    max-height: 200px;
+    min-height: 250px;
     font-family: "Roboto";
     background-color: white;
     box-shadow: -0.2vw 0.2vw 0.7vw rgb(21, 19, 19);
+}
+
+.box-M-progamacao {
+    display: block;
+    position: relative;
+    min-width: 85%;
+    max-width: 95%;
+    max-height: 70px;
+    min-height: 100px;
+    right: 5%;
+    transform: translateY(-40%);
+    width: max-content;
+    height: auto;
+    
 }
 
 .geral-patronos {
@@ -315,6 +351,7 @@ body {
     max-width: 500px;
     min-width: 200px;
     height: 700px;
+
 
 }
 
@@ -327,7 +364,7 @@ body {
     background-repeat: no-repeat;
     background-position: -210px 11px;
     min-height: 101%;
-    transform: translate(-0%, 13%);
+    transform: translate(-0%, 6vw);
     padding: 0%;
     margin: 0%;
 }
