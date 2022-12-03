@@ -44,7 +44,7 @@ body {
 }
 
 .back-two {
-    display: flex;
+    display: inline-flex;
     position: relative;
     background-image: url("../../img/background/back-2-min.png");
     background-repeat: no-repeat;
@@ -77,8 +77,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    max-height: 1500px;
-    min-height: 790px;
+    max-height: 1400px;
+    min-height: 780px;
 
 
 }
