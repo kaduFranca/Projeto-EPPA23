@@ -346,9 +346,11 @@ body {
     display: block;
     z-index: 4;
     max-width: 500px;
+    min-width: 300px;
+
     min-width: 200px;
     height: 700px;
-
+    min-height: 500px;
 
 }
 
@@ -359,9 +361,12 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-position: -220px 11px;
+    min-height: 105%;
+    transform: translate(-0%, 10%);
     background-position: -210px 11px;
     min-height: 101%;
-    transform: translate(-0%, 6vw);
+    transform: translate(-0%, 13%);
     padding: 0%;
     margin: 0%;
 }
@@ -374,6 +379,8 @@ body {
     background-color: transparent;
     width: 220px;
     min-width: 40%;
+    transform: translateX(39%);
+    top: 53%;
     transform: translateX(37%);
     top: 50%;
     padding: 0;
