@@ -73,12 +73,9 @@ body {
 }
 
 .back-four {
-    display: flex;
     background-image: url("../../img/background/back-4.png");
     background-repeat: no-repeat;
     background-size: cover;
-    align-items: center;
-    justify-content: center;
     background-position: center center;
     max-height: 1500px;
     min-height: 790px;
