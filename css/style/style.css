@@ -216,24 +216,22 @@ body {
 }
 
 .geral-ingresso {
-    display: inline-flexbox;
+    display: flex;
     background-color: transparent;
-    position: static;
+    position: relative;
     flex-wrap: wrap;
     display: inline-block;
     justify-content: center;
     max-width: 100%;
     padding: 0;
     margin: 0;
+    transform: translateY(-20%);
 }
 
 .imagem-ingresso {
-    display: block;
+    display: inline-block;
     background-image: url("../../img/slogan/ingressos.png");
-    position: static;
-    align-items: center;
-    justify-content: center;
-    text-align-last: center;
+    position: relative;
     background-repeat: no-repeat;
     background-position: center;
     max-width: 95vw;
@@ -263,10 +261,9 @@ body {
     height: 80%;
     width: 80%;
     left: 5%;
-    top: -8%;
-    bottom: 15%;
     padding: 0;
     margin: 0;
+    top: -8%;
     z-index: 4;
     animation: Girar 15s linear infinite;
 }
