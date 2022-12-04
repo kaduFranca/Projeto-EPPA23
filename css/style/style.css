@@ -229,9 +229,12 @@ body {
 }
 
 .imagem-ingresso {
-    display: inline-block;
+    display: block;
     background-image: url("../../img/slogan/ingressos.png");
     position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align-last: center;
     background-repeat: no-repeat;
     background-position: center;
     max-width: 95vw;
