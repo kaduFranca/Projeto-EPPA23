@@ -58,7 +58,6 @@ body {
 }
 
 .back-three {
-    display: inline-block;
     background-image: url("../../img/background/back-3.png");
     background-repeat: no-repeat;
     background-size: cover;
