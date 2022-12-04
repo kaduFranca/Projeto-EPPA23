@@ -343,7 +343,7 @@ body {
 
 .geral-patronos {
     position: relative;
-    display: block;
+    display: inline-flexbox;
     z-index: 4;
     max-width: 500px;
     min-width: 300px;
@@ -355,24 +355,20 @@ body {
 }
 
 .cogumelo {
-    position: relative;
+    position: static;
     background-image: url('../../img/graphics/programacao_inteiro.png');
     background-color: transparent;
     background-size: cover;
-    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: -220px 11px;
-    min-height: 105%;
-    transform: translate(-0%, 10%);
     background-position: -210px 11px;
     min-height: 101%;
-    transform: translate(-0%, 13%);
+    transform: translate(-0%, 6vw);
     padding: 0%;
     margin: 0%;
 }
 
 .box-patronos {
-    display: inline-block;
+    display: block;
     position: absolute;
     font-family: "Roboto";
     color: #5e380b;
