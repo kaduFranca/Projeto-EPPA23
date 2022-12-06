@@ -51,8 +51,8 @@ body {
     background-size: cover;
     align-items: center;
     justify-content: center;
-    background-position: center center;
-    min-height: 1000px;
+    background-position: center;
+    min-height: 950px;
 
 
 }
@@ -64,9 +64,6 @@ body {
     background-position: center center;
     min-height: 800px;
     position: relative;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
 
 
 }
@@ -129,23 +126,29 @@ body {
 }
 
 
-.box-1 {
+.boxG-Guardioes {
     position: relative;
     display: inline-flex;
-    align-items: flex-start;
     justify-content: center;
-    margin-bottom: 20%;
 
-    
 }
+
+.boxG-jornada {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    padding-bottom: 25%;
+}
+
 
 .box_Guardioes {
     position: relative;
-    display: block;
+    display: inline-block;
     max-width: 403px;
+    min-width: 300px;
     height: auto;
-    max-height: 350px;
-    min-height: 250px;
+    max-height: 270px;
+    min-height: 240px;
     font-family: "Roboto";
     background-color: white;
     box-shadow: -0.2vw 0.2vw 0.7vw rgb(21, 19, 19);
@@ -156,19 +159,38 @@ body {
     position: relative;
     min-width: 90%;
     max-width: 90%;
+    max-height: 10px;
+    min-height: 120px;
     right: 5%;
     transform: translateY(-30%);
     width: max-content;
     height: auto;
+}
+.texto-Guardioes{
+    background-image: url("../../img/slogan/guardioes.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 0.2vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    min-width: 85%;
+    max-height: 20%;
+    min-height: 20%;
+    height: 150px;
+    width: 390px;
+    padding: 0;
 }
 
 .box_jornada {
     position: relative;
     display: inline-block;
     max-width: 403px;
+    min-width: 300px;
     height: auto;
-    max-height: 1%;
-    min-height: 350px;
+    max-height: 340px;
+    min-height: 370px;
     font-family: "Roboto";
     background-color: white;
     box-shadow: -0.2vw 0.2vw 0.7vw rgb(21, 19, 19);
@@ -179,10 +201,30 @@ body {
     position: relative;
     min-width: 90%;
     max-width: 90%;
+    max-height: 10px;
+    min-height: 120px;
     right: 5%;
     transform: translateY(-30%);
     width: max-content;
     height: auto;
+}
+
+.texto-jornada {
+    background-image: url("../../img/slogan/ajornada.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center -0.5vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    min-width: 90%;
+
+    max-height: 10%;
+    min-height: 10%;
+    height: 150px;
+    width: 390px;
+    padding: 0;
 }
 
 .botao {
@@ -334,7 +376,7 @@ body {
     transform: translateY(-40%);
     width: max-content;
     height: auto;
-    
+
 }
 
 .geral-patronos {
