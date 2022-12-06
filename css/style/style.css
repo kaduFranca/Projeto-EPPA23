@@ -51,7 +51,7 @@ body {
     background-size: cover;
     align-items: center;
     justify-content: center;
-    background-position: center;
+    background-position: center center;
     min-height: 950px;
 
 
@@ -64,7 +64,9 @@ body {
     background-position: center center;
     min-height: 800px;
     position: relative;
-
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -137,7 +139,7 @@ body {
     position: relative;
     display: inline-flex;
     justify-content: center;
-    padding-bottom: 25%;
+    padding-bottom: 15%;
 }
 
 
