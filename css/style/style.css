@@ -172,11 +172,12 @@ body {
     background-image: url("../../img/slogan/guardioes.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center 0.2vw;
+    background-position: center center;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 80%;
+    transform: translateY(-15px);
+    max-width: 90%;
     min-width: 85%;
     max-height: 20%;
     min-height: 20%;
@@ -215,13 +216,13 @@ body {
     background-image: url("../../img/slogan/ajornada.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center -0.5vw;
+    background-position: center center;
     display: block;
     margin-left: auto;
     margin-right: auto;
     max-width: 80%;
     min-width: 90%;
-
+    transform: translateY(-7px);
     max-height: 10%;
     min-height: 10%;
     height: 150px;
@@ -346,36 +347,56 @@ body {
 .box-2 {
     position: relative;
     display: inline-flex;
-    align-items: flex-start;
     justify-content: center;
+
     margin-top: 20%;
     padding-bottom: 5%;
-    padding-left: 9%;
-    padding-right: 9%;
+    padding-left: 8%;
+    padding-right: 8%;
 
 }
 
 .box_progamacao {
     position: relative;
-    display: block;
-    max-width: 370px;
+    display: inline-block;
+    max-width: 403px;
+    min-width: 300px;
     height: auto;
     max-height: 200px;
-    min-height: 250px;
+    min-height: 245px;
     font-family: "Roboto";
     background-color: white;
     box-shadow: -0.2vw 0.2vw 0.7vw rgb(21, 19, 19);
 }
 
-.box-M-progamacao {
+.texto-programacao{
+    background-image: url("../../img/slogan/Programacao.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-26px);
+    max-width: 80%;
+    min-width: 80%;
+    max-height: 10%;
+    min-height: 10%;
+    height: 150px;
+    width: 390px;
+    padding: 0;
+}
+
+.box-M-progamacao {
+
+    display: inline-block;
     position: relative;
-    min-width: 85%;
-    max-width: 95%;
-    max-height: 70px;
-    min-height: 100px;
+    min-width: 80%;
+    max-width: 80%;
+    max-height: 10px;
+    min-height: 95px;
     right: 5%;
-    transform: translateY(-40%);
+    transform: translateY(-30%);
     width: max-content;
     height: auto;
 

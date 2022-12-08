@@ -15,16 +15,6 @@ body {
     display: block;
 }
 
-.logo {
-    display: block;
-    background-image: url("../../img/icons/logo-min.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-
-    width: 200px;
-    height: 200px;
-}
 
 
 .clock {
