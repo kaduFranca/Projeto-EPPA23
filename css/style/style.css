@@ -58,15 +58,15 @@ body {
 }
 
 .back-three {
+    display: inline-block;
+    position: relative;
     background-image: url("../../img/background/back-3.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     min-height: 800px;
-    position: relative;
     text-align: center;
-    align-items: center;
-    justify-content: center;
+
 
 }
 
