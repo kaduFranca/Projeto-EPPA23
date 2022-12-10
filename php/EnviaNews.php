@@ -1,17 +1,17 @@
 <?php
-        include_once("conecta.php");//Conexao banco de dados.
-        //Inicio importacao da biblioteca PHPmailer
-        require_once "src/PHPMailer.php";
-        require_once "src/SMTP.php";
-        require_once "src/Exception.php";
+    include_once("Conecta.php");//Conexao banco de dados.
+    //Inicio importacao da biblioteca PHPmailer
+    require_once "src/PHPMailer.php";
+    require_once "src/SMTP.php";
+    require_once "src/Exception.php";
 
-        use PHPMailer\PHPMailer\PHPMailer;
-        use PHPMailer\PHPMailer\SMTP;
-        use PHPMailer\PHPMailer\Exception;
-        //Fim importacao da biblioteca PHPmailer
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\SMTP;
+    use PHPMailer\PHPMailer\Exception;
+    //Fim importacao da biblioteca PHPmailer
 
-        $link = $_POST["link"];
-        if ($link == $link){
+    $link = $_POST["link"];
+    if ($link != ''){
         $select = $con->query("select * from registros where autorizado = 'S';");
         while ($tuplas = $select->fetch_assoc()){
             $email = new PHPMailer();//Criando objeto email
@@ -48,8 +48,10 @@
             catch (Exception $e) {
                 echo "Erro ao enviar mensagem: {$email -> ErrorInfo}";
             }
-            //print_r($tuplas['email']);
             }
             echo '<script>alert("Emails enviados!")</script>';
-        }
-    ?>  
+    }
+    else {
+        echo '[ERRO] Insira o link para uma imagen!';
+    }
+?>

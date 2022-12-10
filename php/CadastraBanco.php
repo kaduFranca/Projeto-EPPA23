@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
-        include_once("conecta.php");//Conexao banco de dados.
+        include_once("Conecta.php");//Conexao banco de dados.
         $post = filter_input_array(INPUT_POST,FILTER_DEFAULT);//Pegando nome e email do interessado e guardando em um vetor.
         if (!empty($post['nome'] and $post['email'])){//Verifica se email e nome foram preenchidos.
             $nome = $post['nome'];//Pegando nome salvo no vetor e salvando em uma variavel.
