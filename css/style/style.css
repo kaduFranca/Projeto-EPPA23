@@ -58,13 +58,13 @@ body {
 }
 
 .back-three {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     background-image: url("../../img/background/back-3.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    min-height: 800px;
+    min-height: 900px;
     text-align: center;
 
 
