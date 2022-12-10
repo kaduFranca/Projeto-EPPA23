@@ -28,6 +28,7 @@ CREATE TABLE `registros` (
   `nome` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   `autorizado` enum('S','N') DEFAULT 'S',
+  `data_registro` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`email`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
