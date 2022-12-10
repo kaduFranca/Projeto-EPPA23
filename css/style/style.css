@@ -58,8 +58,8 @@ body {
 }
 
 .back-three {
-    display: inline-block;
-    position: relative;
+    display: flex;
+    justify-content: center;
     background-image: url("../../img/background/back-3.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -71,12 +71,14 @@ body {
 }
 
 .back-four {
+    position: relative;
+    display: flex;
     background-image: url("../../img/background/back-4.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     max-height: 1400px;
-    min-height: 780px;
+    min-height: 710px;
 
 
 }
@@ -123,7 +125,8 @@ body {
     right: 0;
     padding: 0;
     margin-top: -1.5%;
-    margin-bottom: -10%;
+    margin-bottom: -1.6%;
+    z-index: 5;
 
 }
 
@@ -167,7 +170,8 @@ body {
     width: max-content;
     height: auto;
 }
-.texto-Guardioes{
+
+.texto-Guardioes {
     background-image: url("../../img/slogan/guardioes.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -256,6 +260,8 @@ body {
     background-color: #532A64;
     font-family: "Roboto";
     color: #fff;
+    display: flex;
+    position: relative;
 }
 
 .geral-ingresso {
@@ -266,7 +272,8 @@ body {
     max-width: 100%;
     padding: 0;
     margin: 0;
-    transform: translateY(100%);
+    align-self: center;
+
 }
 
 .imagem-ingresso {
@@ -367,7 +374,7 @@ body {
     box-shadow: -0.2vw 0.2vw 0.7vw rgb(21, 19, 19);
 }
 
-.texto-programacao{
+.texto-programacao {
     background-image: url("../../img/slogan/Programacao.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -402,14 +409,14 @@ body {
 
 .geral-patronos {
     position: relative;
-    display: inline-flexbox;
+    display:  block;
     z-index: 4;
     max-width: 500px;
-    min-width: 300px;
-
     min-width: 200px;
     height: 700px;
     min-height: 500px;
+    z-index: 10;
+
 
 }
 
@@ -419,11 +426,13 @@ body {
     background-color: transparent;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: -210px 11px;
-    min-height: 101%;
-    transform: translate(-0%, 6vw);
+    background-position: -230px 11px;
+    min-height: 111%;
+    transform: translate(-0%, -5%);
     padding: 0%;
     margin: 0%;
+    z-index: 10;
+
 }
 
 .box-patronos {
