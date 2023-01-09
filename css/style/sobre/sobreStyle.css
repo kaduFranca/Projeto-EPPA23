@@ -1,0 +1,56 @@
+@import url("https://use.typekit.net/uma2tiz.css");
+
+@font-face {
+    font-family: 'Magic-Retro';
+    src: url("../../font/magic-retro.ttf")
+}
+
+
+body {
+    background-color: #ba945e;
+    font-family: "Roboto";
+    min-width: 320px;
+    max-width: 1900px;
+    padding: 0;
+    margin: 0 auto !important;
+    user-select: none;
+
+}
+
+.navbar {
+    min-width: 320px;
+    max-width: 1900px;
+    padding: 0;
+    margin: 0 auto !important;
+
+}
+
+.font-magic {
+    font-family: "Magic-Retro";
+}
+
+
+.cor-marrom {
+    background-color: #5e380b;
+}
+
+.navbar li a:hover {
+    background-color: #ba945e;
+}
+
+
+.back-one {
+    background-image: url("../../../img/background/sobreTopo.png");
+    position: relative;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    max-height: 700px;
+    min-height: 150px;
+    width: 100%;
+
+
+}
+
+
