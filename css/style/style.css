@@ -454,7 +454,8 @@ body {
     margin: 0;
 }
 .apoio{
-    width: 30%;
+    width: 40%;
+    min-width: 200px;
     height: 100px;
     margin: 0;
     text-align: center;
@@ -464,7 +465,7 @@ body {
 .logo-Monster{
     background-image: url('../../img/apoio/logo-monster-energy.svg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     width: 100%;
     height: 100%;
@@ -475,6 +476,6 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
 }
