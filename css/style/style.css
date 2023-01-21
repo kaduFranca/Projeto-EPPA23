@@ -453,3 +453,28 @@ body {
     padding: 0;
     margin: 0;
 }
+.apoio{
+    width: 30%;
+    height: 100px;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    position: relative;
+}
+.logo-Monster{
+    background-image: url('../../img/apoio/logo-monster-energy.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.logo-Fensa{
+    background-image: url('../../img/apoio/fensa-logo.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
