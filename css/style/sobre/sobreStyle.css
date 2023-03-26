@@ -1,0 +1,542 @@
+@import url("https://use.typekit.net/uma2tiz.css");
+
+@font-face {
+    font-family: 'Magic-Retro';
+    src: url("../../../font/magic-retro.ttf")
+}
+
+
+body {
+    background-color: #fff;
+    font-family: "Roboto";
+    min-width: 320px;
+    /* max-width: 1900px; */
+    padding: 0;
+    margin: 0 auto !important;
+    user-select: none;
+
+}
+
+.navbar {
+    min-width: 320px;
+    max-width: 1900px;
+    padding: 0;
+    margin: 0 auto !important;
+
+}
+
+.font-magic {
+    font-family: "Magic-Retro";
+}
+
+
+.cor-marrom {
+    background-color: #5e380b;
+}
+
+.navbar li a:hover {
+    background-color: #ba945e;
+}
+
+/*-----------------Div Geral---------------------*/
+
+.principal {
+    min-width: 320px;
+    max-width: 1900px;
+    padding: 0;
+    margin: 0 auto !important;
+    flex-wrap: wrap;
+    display: flex;
+
+}
+
+/*----------------- Filtro Img Triangular---------------------*/
+
+.Img-Sobreposta {
+    background-image: url("../../../img/background/FrontalTriangular2.svg");
+    filter: brightness(0.10) opacity(.40);
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    background-repeat: repeat;
+    height: 100%;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1900px;
+}
+
+/*-----------------Botao---------------------*/
+
+.botao {
+    font-family: 'Magic-Retro';
+    box-shadow: -0.05vw 0.05vw 0.2vw rgb(21, 19, 19);
+    color: #532A64;
+    background-color: #fff;
+}
+
+.botao:active {
+    background-color: transparent;
+    color: #fff;
+}
+
+/*-----------------Banner---------------------*/
+
+.banner {
+    background-color: aqua;
+    position: relative;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Banner-fundo {
+    background-image: url("../../../img/background/sobreTopo.png");
+    background-repeat: no-repeat;
+    background-position: center 40px;
+    background-size: cover;
+    width: 100%;
+    min-height: 600px;
+    max-height: 40vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    z-index: 9;
+
+}
+
+.Banner-Sobre-container {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    max-width: 400px;
+    min-width: 45%;
+    height: max-content;
+    flex-wrap: wrap;
+    padding: 0%;
+    margin: 0 auto;
+    z-index: 11;
+
+}
+
+#banner-logo {
+    background-image: url("../../../img/icons/logo-min.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100px;
+    margin: 6%;
+
+
+}
+
+#banner-texto {
+    position: relative;
+    color: #fff;
+    font-family: 'Roboto';
+
+}
+
+/*----------------------------------------------*/
+
+/*---------------Fundo Geral Roxo---------------------*/
+.Div-Roxo {
+    background-color: rgb(83, 42, 100);
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: max-content;
+    flex-wrap: wrap;
+
+}
+
+/*---------------Fundo Formas geométricas---------------------*/
+
+.Vertical-Esquerdo {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    left: 0;
+}
+
+.Vertical-Esquerdo-2023 {
+    position: absolute;
+    width: 10%;
+    height: 60%;
+    top: 0%;
+    left: 0;
+}
+
+.Vertical-Direito {
+    position: absolute;
+    width: 17%;
+    height: 100%;
+    right: 0;
+}
+
+.inferior {
+    position: absolute;
+    width: 92%;
+    height: 10%;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+}
+
+.inferior-2023 {
+    position: absolute;
+    width: 92%;
+    height: 10%;
+    right: 0;
+    bottom: 36%;
+    background-color: transparent;
+}
+
+/*------------------------Formas geométricas--------------------------------*/
+
+.Ret-Vertical-Esquerdo {
+    background-color: #fff;
+    width: 10px;
+    height: 70%;
+    right: 0;
+    top: 20%;
+    margin-top: 10px;
+    position: absolute;
+}
+
+.Ret-Vertical-Esquerdo-DESC {
+    background-color: #fff;
+    width: 10px;
+    height: 10%;
+    right: 0;
+    bottom: 0%;
+    position: absolute;
+}
+
+.Ret-Vertical-Esquerdo-Completa {
+    background-color: #fff;
+    width: 10px;
+    height: 100%;
+    right: 0;
+    top: -10%;
+    margin-top: 10px;
+    position: absolute;
+}
+
+.Ret-Vertical-Direito {
+    background-color: #fff;
+    width: 10px;
+    height: 100%;
+    left: 0;
+    top: -10%;
+    margin-top: 10px;
+    position: absolute;
+}
+
+.Ret-Vertical-Direito-DESC {
+    background-color: #fff;
+    width: 10px;
+    height: 10%;
+    left: 0;
+    bottom: 0%;
+    position: absolute;
+}
+
+
+.Ret-Horizontal {
+    background-color: #fff;
+    width: 80%;
+    height: 10px;
+    left: 2%;
+    position: absolute;
+}
+
+.Ret-Horizontal-curta {
+    background-color: #fff;
+    width: 15%;
+    height: 10px;
+    left: 2%;
+    position: absolute;
+}
+
+
+.circulo-Esquerdo {
+    background-color: #fff;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    right: 0%;
+    top: 20%;
+    margin-right: -20px;
+    position: absolute;
+}
+
+.circulo-Direito {
+    background-color: #fff;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    left: 0%;
+    top: 20%;
+    margin-left: -20px;
+    position: absolute;
+}
+
+
+/*---------------Div separador de ano---------------------*/
+
+
+.fundo-anos {
+    background-size: contain;
+    width: 100%;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    z-index: 11;
+
+}
+
+
+
+/*---------------Texto sobre--------------------*/
+
+.titulo-sobre {
+    color: #F7ECC4;
+    font-family: 'Magic-Retro';
+    position: relative;
+    margin-bottom: 10%;
+
+}
+
+.paragrafo-sobre {
+    color: #fff;
+    font-family: 'Roboto';
+    position: relative;
+
+}
+
+#sobre-2023 {
+    font-family: 'Magic-Retro';
+    color: #F7ECC4;
+}
+
+/*---------------blocos de informações por ano--------------------*/
+
+.bloco-reverso {
+    flex-direction: row-reverse;
+
+}
+
+.bloco-info-primeiro {
+    position: relative;
+    display: flex;
+    width: 70%;
+    height: 80%;
+    margin: 8%;
+    margin-bottom: 5%;
+    padding: 0;
+    margin-left: 7%;
+
+
+}
+
+.bloco-info {
+    position: relative;
+    display: flex;
+    width: 70%;
+    height: 80%;
+    margin: 8%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    padding: 0;
+    margin-left: 7%;
+
+
+
+}
+
+.bloco-2023 {
+    position: relative;
+    display: inline-flex;
+    right: -0%;
+    width: 50%;
+    height: max-content;
+    margin: 5%;
+    height: auto;
+
+
+}
+
+.bloco-info-secundario {
+    position: relative;
+    display: flex;
+    width: 70%;
+    height: 80%;
+    margin: 8%;
+    margin-top: 2%;
+    margin-left: -5%;
+    padding: 0;
+    margin-bottom: 5%;
+
+}
+
+.bloco-info-historia {
+    max-width: 400px;
+    min-width: 200px;
+    height: auto;
+
+}
+
+.bloco-info-img {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.quadro-img {
+    display: flex;
+    position: relative;
+    margin: 0%;
+    max-width: 400px;
+    min-width: 90%;
+    max-height: 100%;
+    min-height: 350px;
+    padding: 0;
+
+}
+
+.quadro-img-coelho {
+    display:inline-flex;
+    position: relative;
+    margin: 0%;
+    max-width: 100%;
+    min-width: 200px;
+    max-height: 100%;
+    min-height: 400px;
+    padding: 0;
+    margin: 0;
+}
+
+.Titulo-sobre-2023 {
+    margin: 0 auto;
+    display: block;
+    min-width: 200px;
+}
+
+.bloco-titulo {
+    display: flex;
+    margin: 0 auto;
+}
+
+/*---------------Imagens por ano--------------------*/
+
+.img-sobre-2005 {
+    background-image: url("../../../img/fotos/sobre-2005.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: auto;
+}
+
+.img-sobre-2010 {
+    background-image: url("../../../img/fotos/sobre-2010.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: auto;
+}
+
+.img-sobre-2019 {
+    background-image: url("../../../img/fotos/sobre-2019.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: auto;
+}
+
+.img-sobre-2021 {
+    background-image: url("../../../img/fotos/sobre-2021.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: auto;
+}
+
+.img-sobre-2022 {
+    background-image: url("../../../img/fotos/sobre-2022.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: auto;
+}
+
+.img-sobre-2023 {
+    background-image: url("../../../img/fotos/sobre-2023.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center ;
+    padding: 0;
+    bottom: 0;
+    height: 23vmax;
+    min-width: 17vmax;
+    max-width: 100%;
+
+
+}
+
+/*---------------Footer--------------------*/
+.Div-Branca {
+    background-color: #fff;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: max-content;
+    flex-wrap: wrap;
+    z-index: 15;
+}
+
+.bloco-footer {
+    padding: 5%;
+    padding-top: 2%;
+}
+
+#ft-titulo {
+    color: #532A64;
+
+    font-family: 'Magic-Retro';
+}
+
+.footer-numeros {
+    color: #532A64;
+    font-family: 'Roboto';
+  
+
+}
+.linha-soma{
+}
+.botao-ingressos {
+    font-family: 'Magic-Retro';
+    box-shadow: -0.05vw 0.05vw 0.2vw rgb(21, 19, 19);
+    color: #fff;
+    background-color: #532A64;
+}
+
+.botao-ingressos:active {
+    background-color: transparent;
+    color: #532A64;
+}

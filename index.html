@@ -7,42 +7,61 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- icons-->
+  <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/icons/favicon.ico" type="image/x-icon">
+
   <!-- Bootstrap CSS v5.2.2 -->
   <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="css/style/style.css">
   <link rel="stylesheet" href="css/style/relogio.css">
+  <link rel="stylesheet" href="css/style/loader.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 
 </head>
 
 <body>
+  <div id="preloader">
+    <div class="inner">
+      <div class="desenho">
+        <div></div>
+      </div>
+    </div>
+  </div>
   <header>
-    <nav class="navbar  navbar-expand-lg position-fixed d-flex fixed-top  cor-marrom ">
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg  position-fixed d-flex fixed-top  cor-marrom ">
       <div class="container-fluid ">
-        <button class="navbar-toggler  btn-close-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarEppa"
+        <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarEppa"
           aria-controls="navbarEppa" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="bi bi-grid-fill"></span>
         </button>
-        <a class="navbar-brand m-1 mx-auto mx-lg-4 mx-md-1" href="#">
-          <img src="img/icons/logo.svg" alt="EPPA" width="80%">
+        <a class="navbar-brand m-1 mx-auto mx-lg-4 mx-md-1" href="#inicial">
+          <img src="img/icons/logo-min.svg" alt="EPPA" width="80%">
         </a>
-        <div class="collapse  navbar-collapse justify-content-end " id="navbarEppa">
+        <div class="collapse navbar-collapse justify-content-end text-center" id="navbarEppa">
           <ul class="navbar-nav  mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active text-white p-3 rounded-pill py-1" aria-current="page" href="#">Início</a>
+            <hr>
+            <li class="nav-item  ">
+              <a class="nav-link active text-white p-3 rounded-pill py-1" aria-current="page" href="#inicial">Início</a>
             </li>
+            <hr>
             <li class="nav-item">
-              <a class="nav-link text-white p-3 rounded-pill py-1" href="#">Sobre o Eppa</a>
+              <a class="nav-link text-white p-3 rounded-pill py-1" href="Html/Sobre/sobre.html">Sobre o Eppa</a>
             </li>
+            <hr>
             <li class="nav-item">
-              <a class="nav-link text-white p-3 rounded-pill py-1" href="#">Programação</a>
+              <a class="nav-link text-white p-3 rounded-pill py-1" href="#programacao">Programação</a>
             </li>
+            <hr>
             <li class="nav-item">
-              <a class="nav-link text-white p-3 rounded-pill py-1" href="#">Ingressos</a>
+              <a class="nav-link text-white p-3 rounded-pill py-1" href="#ingressos">Ingressos</a>
             </li>
+            <hr>
             <li class="nav-item">
-              <a class="nav-link text-white p-3 rounded-pill py-1" href="#">Quem faz acontecer</a>
+              <a class="nav-link text-white p-3 rounded-pill py-1" href="Html/QuemFazAcontecer/quemFazAcontecer.html">Quem faz acontecer</a>
             </li>
-
+            <hr>
           </ul>
 
         </div>
@@ -51,116 +70,276 @@
   </header>
   <main>
 
+    <!-- Primeiro fundo (Coelho) -->
+    <div class="container-fluid position-relative  back-one mt-5 " id="inicial">
 
-    <div class="back-one mt-5 ">
-      <div class="container-fluid position-relative">
-        <div class="row g-0 align-items-center">
-
-          <div class="col-4 text-center mx-auto  order-2 w-50 my-lg-0 my-md-1 my-3 ronaldo position-absolute ">
-            <img sizes="(max-width: 480px) calc(100vw - 10px), 480px" src="img/graphics/Ronaldo.svg" alt="ronaldo"
-              width="90%" class="img-fluid rounded d-flex">
-
-          </div>
-
-
-          <div class="col-3 clock  relogio order-1">
-            <div class="hour"></div>
-            <div class="min"></div>
-            <div class="sec"></div>
-            <div class="centro rounded-circle"></div>
-          </div>
-
-          <div class="col-4 mx-auto text-center order-3 position-absolute me-lg-5 w-50 slogan">
-            <img sizes="(max-width: 480px) calc(100vw - 10px), 480px" src="img/slogan/slogan.png" alt="slogan"
-              width="60%" class="img-fluid rounded d-block border-0 mx-auto me-3 ms-auto">
-
-          </div>
+      <div class="row g-0 align-items-center">
+        <!-- Coelho Ronaldo -->
+        <div class="col-4 text-center mx-auto  order-2 w-50 my-lg-0 my-md-1 my-3 ronaldo position-absolute ">
+          <img src="img/graphics/ronaldo-min.png" alt="ronaldo" width="90%" class="img-fluid rounded d-block">
         </div>
-        <div
-          class="row g-0 mx-auto my-0 position-relative order-4 text-center pt-md-5 pt-lg-5 pt-4 align-items-center separador">
-          <img src="img/graphics/separador.svg" alt="separador" class="img-fluid rounded d-block pt-5 mt-auto"
-            style="margin-bottom: -1.5%;">
+
+        <!-- Relogio -->
+        <div class="col-3 clock relogio order-1">
+          <div class="hour"></div>
+          <div class="min"></div>
+          <div class="sec"></div>
+          <div class="centro rounded-circle"></div>
+        </div>
+
+        <!-- Slogan (O coelho, a porta e a criatividade) -->
+        <div class="col-4 mx-auto text-center order-3 position-absolute me-lg-5 w-50 slogan">
+          <img src="img/slogan/slogan-min.png" alt="slogan" width="60%" class="img-fluid rounded d-block ms-auto">
+
         </div>
       </div>
-    </div>
-
-    <div class="back-two bg ps-0 ps-lg-5 ">
-      <div class="container-fluid ">
-        <div class="row ">
-          <div class="col-lg-6 col-md-12 mx-lg-auto px-4 my-lg-0 my-0 py-5">
-            <div class="box-marrom cor-marrom d-flex my-0  mx-lg-4 py-lg-1 py-4 py-md-2 rounded-5 position-relative"
-              style="top: 15%; left: 0%; width: 60%; height: 18%;">
-              <div class="d-flex mx-lg-auto  my-lg-1 mx-sm-auto mx-3 my-sm-0  my-2">
-                <div class="badge " style="width:3.7rem ;padding: 6.5%; font-size: 4.3em;">
-                  <p class="">A</p>
-                </div>
-                <div class="badge text-wrap d-block ">
-                  <p class="display-6" style="width: 1em; height: 1rem;">Jornada</p>
-                  <p class="display-6" style="width: 4.5em;">até aqui</p>
-                </div>
-              </div>
-            </div>
-            <div class="  mx-auto m-5 mb-lg-5 box-1 position-static rounded-5 w-75 pt-md-0  pt-lg-5">
-              <div
-                class="badge mx-3  mt-5 mt-md-1 pt-5 pt-md-5 mt-lg-0 pt-lg-4 my-0 pt-0  py-4 fs-5  fw-normal text-wrap lh-sm text-break "
-                style="color: #5E380B;">
-                <p class="text-start ">Presente como o maior evento de comunicação da sua região, o eppa navega por
-                  esse universo há mais
-                  de
-                  17 edições.
-                </p>
-                <p class="text-start  ">
-                  Dessa vez, a hora de embarcar em uma nova jornada chegou. Descubra a chave que destravará sua
-                  criatividade e aprenda como utilizar isso a seu favor, independente da sua área de expertise.
-                </p>
-                <div class="text-start">
-                  <button
-                    class="box-marrom botao cor-marrom rounded-pill text-center text-white w-auto fs-5 border-0 mx-1  mt-2 px-5 py-1">Saiba
-                    mais</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-12 mx-lg-auto px-4 my-lg-0 my-0 py-5">
-            <div class="box-marrom cor-marrom d-flex   my-0 mx-lg-4 py-lg-1 py-3 py-md-2 rounded-5 position-relative"
-              style="top: 15%; left: 0%; width: 60%; height: 18%;">
-              <div class="d-flex mx-lg-auto  my-lg-2 mx-sm-auto mx-2  " style="padding: 0%; height: 10rem;">
-                <div class="badge text-wrap d-block">
-                  <p class="display-6" style="width: 5em; height: 1rem;">Guardiões</p>
-                  <p class="display-6" style="width: 7em;">da criatividade</p>
-                </div>
-              </div>
-            </div>
-            <div class=" mx-auto m-5 mb-lg-5 box-1 position-static rounded-5 w-75 pt-md-0  pt-lg-5">
-              <div
-                class="badge mx-3 mt-5 mt-md-2 pt-1 pt-md-4 mt-lg-0 pt-lg-4 my-0  py-4 fs-5  fw-normal text-wrap lh-sm text-break"
-                style="color: #5E380B;">
-                <p class="text-start  ">Conheça os responsáveis por guiar sua jornada durante o evento, com tudo que é
-                  necessário para despertar seu fazer criativo através de workshops e palestras imersivas.
-                </p>
-                <div class="text-start">
-                  <button
-                    class="box-marrom botao cor-marrom rounded-pill text-center text-white w-auto fs-5 border-0 mx-2  mt-2 px-5 py-1">Veja
-                    todos</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="row my-1 mx"></div>
+      <!-- Separador de background -->
+      <div
+        class="row g-0 mx-auto my-0 position-relative order-4 text-center pt-md-5 pt-lg-5 pt-4 align-items-center separador">
+        <img src="img/graphics/separador-min.svg" alt="separador" class="img-fluid rounded d-block pt-5 mt-auto"
+          style="margin-bottom: -1.5%;">
       </div>
+
     </div>
+
+    <!-- Segundo fundo (Quadros Jornada e Guardiões) -->
+    <div class="container-fluid back-two  " id="sobre">
+      <div class="row " style="width: 95vw;">
+
+        <!-- Primeiro quadrado (A jornada até aqui) -->
+        <div class="col-lg-6 col-md-12 boxG-jornada mb-5 ">
+          <div class="rounded-5 box_jornada">
+            <div class="font-magic cor-marrom rounded-4 box-M-jornada">
+              <div class="d-flex">
+                <div class="texto-jornada">
+                </div>
+              </div>
+            </div>
+
+            <div class="badge mx-4" style="color: #5E380B;  transform: translateY(-20%);">
+              <p class="text-start lh-1 fs-6 text-break text-wrap fw-normal">Presente como o maior evento de comunicação
+                da sua região, o
+                eppa navega por esse universo há mais de 17 edições.
+                <br /><br />
+                Dessa vez, a hora de embarcar em uma nova jornada chegou. Descubra a chave que destravará sua
+                criatividade e aprenda como utilizar isso a seu favor, independente da sua área de expertise.
+              </p>
+              <div class="text-start ">
+                <button
+                  class="font-magic botao cor-marrom rounded-pill text-center text-white w-auto fs-4 border-0 mx-2 mx-lg-0 my-2 px-5 py-2" onclick="location.href='Html/Sobre/sobre.html'">Saiba
+                  mais</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Segundo quadrado (Guardiões da criatividade) -->
+        <div class="col-lg-6 col-md-12  boxG-Guardioes ">
+
+          <div class="rounded-5 box_Guardioes">
+            <div class="font-magic cor-marrom rounded-4 box-M-guardioes">
+              <div class="d-flex">
+                <div class="texto-Guardioes">
+                </div>
+              </div>
+            </div>
+
+            <div class="badge mx-4" style="color: #5E380B; transform: translateY(-40%);">
+              <p class="text-start lh-1 fs-6 text-break text-wrap fw-normal">Conheça os responsáveis por guiar sua
+                jornada durante o evento, com
+                tudo que é
+                necessário para despertar seu fazer criativo através de workshops e palestras imersivas.
+              </p>
+              <div class="text-start">
+                <button
+                  class="font-magic botao cor-marrom rounded-pill text-center text-white w-auto fs-4 border-0 mx-2 mx-lg-0 my-0 px-3 py-2">Veja
+                  todos</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Separador de background -->
+    <div class="row mx-auto  position-relative separador2  text-center">
+      <img src="img/graphics/separador-min.svg" alt="separador" class="img-fluid rounded d-block">
+    </div>
+
+    <!-- Terceiro fundo (Ingressos) -->
+    <div class="container-fluid back-three mx-auto  p-0" id="ingressos">
+
+      <div class="position-relative geral-ingresso">
+        <div class="imagem-ingresso">
+          <div class="logo-ingressos"></div>
+
+
+          <div class=" btn-compre">
+            <input type="submit" class="btn fs-5 rounded-pill"
+              style="background-color: #532A64; color: #FFFFFF; font-family: Magic-Retro;" value="Compre agora">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Separador de background -->
+    <div class="row mx-auto  position-relative separador3 text-center ">
+      <img src="img/graphics/separador-min.svg" alt="separador" class="img-fluid rounded d-block ">
+    </div>
+
+
+    <!-- Quarto fundo (Programação) -->
+    <div class="container-fluid  back-four d-inline-block">
+      <div class="row">
+        <div class="col-12 col-md-12 col-lg-7 d-block position-relative m-0 p-0 ">
+          <div class="geral-patronos">
+            <div class="cogumelo" id="quemfaz">
+              <div class="box-patronos ">
+                <div class="row">
+                  <p class="display-2  fs-1 text-start text-white my-auto"
+                    style="display:inline-block; font-family: Magic-Retro; padding: 0; margin: 0; ">Patronos</p>
+                </div>
+                <div class="row ">
+                  <p class="text-start fs-6 lh-1 fst-normal" style="display:inline-block; padding: 0; margin: 0;">
+                    Conheça as
+                    instituições
+                    que
+                    acreditam na criatividade como ferramenta
+                    transformadora e fizeram o evento acontecer.
+                  </p>
+                </div>
+                <div class="row my-3">
+                  <button
+                    class="font-magic botao cor-marrom rounded-pill text-center text-white w-auto fs-5  border-0 mx-2 px-4 py-1">Conheça</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-5 box-2 " id="programacao">
+          <div class="rounded-5 box_progamacao">
+            <div class="font-magic cor-marrom rounded-4 box-M-progamacao">
+              <div class="d-flex">
+                <div class="texto-programacao">
+                </div>
+              </div>
+            </div>
+
+            <div class="badge mx-4" style="color: #5E380B;  transform: translateY(-50%);">
+              <p class="text-start lh-1 fs-6 text-break text-wrap fw-normal">Selecione as atrações que mais combinam com
+                você e clique em "Enviar programação por e-mail" para receber sua programação personalizada.
+              </p>
+              <div class="text-start ">
+                <button
+                  class="font-magic botao cor-marrom rounded-pill text-center text-white w-auto fs-4 border-0 mx-auto mx-lg-0 my-1 px-4 py-2">Explore</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
 
   </main>
+
+  <!-- Footer -->
   <footer>
-    <!-- place footer here -->
+    <div class="contato">
+      <div class="container pt-5">
+
+        <div class="row justify-content-center align-items-center g-2 " style=" color: #532A64;">
+
+          <!-- Envie uma mensagem -->
+          <div class="col-lg-4 col-md-6 d-flex mx-auto ">
+            <form method="post" action="php/index.php">
+              <div class="row">
+                <p class=" h3 text-start text-wrap" style="font-family: Magic-Retro; color: #F7ECC4;">Envie uma mensagem
+                  ao coelho</p>
+                <p class="badge lh-1 fs-6 text-start text-wrap">Expresse suas dúvidas, vontades ou ideias ao nosso
+                  guia. Em breve, você receberá uma resposta da nossa equipe.
+                </p>
+
+              </div>
+              <div class="row ">
+                <div class="col-lg-6 col-md-10  mb-3 mb-lg-0">
+                  <input type="text" class="form-control  rounded-pill" placeholder="Nome*" aria-label="Nome*" id="nome"
+                    name="nome" required="">
+                </div>
+                <div class="col-lg-6 col-md-10  mb-3 mb-lg-0">
+                  <input type="email" class="form-control rounded-pill" placeholder="E-mail*" aria-label="E-mail*"
+                    id="email" name="mail" required="">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-8 col-md-10 form-floating mb-3">
+                  <div class="mb-0">
+                    <label for="Escreva sua mensagem" class="form-label" id="comentario"></label>
+                    <textarea class="form-control rounded-4 overflow-hidden" placeholder="Escreva sua mensagem"
+                      name="comentario" id="comentario" rows="3" required=""></textarea>
+                  </div>
+
+                </div>
+                <div class="col-lg-3 col-md-12 text-center">
+                  <input type="submit" class="btn mb-3 fs-6 rounded-pill px-4 my-4 "
+                    style="background-color: #F7ECC4; color: #532A64; font-family: Magic-Retro;" value="Enviar">
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- inscreva-se -->
+          <div class="col-lg-4 col-md-6 mb-auto d-flex mx-auto ">
+            <form method="post" action="php/CadastraBanco.php">
+              <div class="row ">
+                <p class=" h3 text-start text-wrap" style="font-family: Magic-Retro; color: #F7ECC4;">Inscreva-se na
+                  newsletter</p>
+                <p class="badge lh-1 fs-6 text-start text-wrap">Fique ligado nos novos conteúdos especiais sobre o eppa
+                  e todo o nosso universo!
+                </p>
+
+              </div>
+              <div class="row ">
+                <div class="col-lg-6 col-md-10  mb-3 mb-lg-0">
+                  <input type="text" class="form-control rounded-pill" placeholder="Nome*" aria-label="Nome*" id="nome"
+                    name="nome" required="">
+                </div>
+                <div class="col-lg-6 col-md-10  mb-3 mb-lg-0">
+                  <input type="email" class="form-control rounded-pill" placeholder="E-mail*" aria-label="E-mail*"
+                    id="email" name="email" required="">
+                </div>
+              </div>
+              <div class="row text-black text-lg-end text-center ">
+                <div class="col-lg-12 col-md-10 col-12">
+                  <input type="submit" class="btn mb-3 fs-6 rounded-pill px-4 my-4 "
+                    style="background-color: #F7ECC4; color: #532A64; font-family: Magic-Retro;" value="Enviar">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row justify-content-lg-end justify-content-center align-items-center mb-2">
+          <div class="col-lg-4 col-10 my-5 mb-5 mx-1 text-center"><p>Realização:</p></div>
+          <div class="col-lg-1 col-10 my-lg-5 my-0 mb-lg-5 mx-1 text-center text-lg-end "><p>Apoio:</p></div>
+          <div class="col-lg-7 col-10 mt-lg-5 mt-0  mx-1 me-lg-5 me-0  text-center  apoio">
+            <div class="col-6">
+              <div class="logo-Monster"></div>
+            </div>
+            <div class="col-6 p-1">
+              <div class="logo-Fensa"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="js/jquery/jquery-3.6.1.min.js"></script>
   <script src="js/bootstrap/popper.min.js"></script>
   <script src="js/bootstrap/bootstrap.min.js"></script>
+  <script src="js/funcionalidades/app.js"></script>
   <script src="js/funcionalidades/relogio.js"></script>
+  <script src="js/funcionalidades/PreLoader.js"></script>
+
 
 </body>
 
